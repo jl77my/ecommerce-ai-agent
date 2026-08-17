@@ -1,15 +1,12 @@
-# AI-Powered E-commerce Support Assistant
+1. Pip Install all the following in requirements.txt
+2. Setup you own gemini api key in .env file
+3. put your huggingface account in 'login()' in tools.py and pdfloader.py file
+4. Setup you own Gmail Json file (https://console.cloud.google.com/) and then put into the same folder with the code.
+5. put the json file name into this code in gmailapi.py file:
+    flow = InstalledAppFlow.from_client_secrets_file(
+                    "YOURJSONFILENAME", SCOPES
+                )
 
-This is an intelligent e-commerce support system built with:
-
-- **Backend:** LangChain  
-- **Frontend:** Streamlit  
-- **Database:** SQLite + Chroma (vector database)  
-
-## Features
-
-- Customer chat interface  
-- Dynamic order lookup  
-- Product knowledge base from PDF upload  
-- Email notifications  
-- Vector search for product recommendations  
+6. Also, the recipient of the Gmail should be updated in the update_order and cancel_order functions in the tools.py file
+    sender = "123@gmail.com"
+        to = "123@gmail.com"

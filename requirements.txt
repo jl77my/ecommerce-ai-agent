@@ -1,0 +1,13 @@
+gradio  
+langchain 
+langchain[google-genai]
+langchain-community
+python-dotenv
+pypdf
+langchain_huggingface
+sentence-transformers
+chromadb
+google-api-python-client 
+google-auth-httplib2 
+google-auth-oauthlib
+
